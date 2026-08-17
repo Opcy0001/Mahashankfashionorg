@@ -1,0 +1,7 @@
+Django==5.0.14
+django-cors-headers==4.9.0
+gunicorn==26.0.0
+PyMySQL==1.2.0
+python-dotenv==1.2.2
+requests==2.34.2
+whitenoise==6.12.0

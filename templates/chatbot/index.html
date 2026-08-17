@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAHASHANKH GROUP | Building the Future Through AI, Tech, Design & Innovation</title>
+  <meta name="description" content="MAHASHANKH GROUP is an innovation-driven organization with four specialized business units — delivering creative design, technology, AI, and talent development solutions across India." />
+  <meta name="keywords" content="Mahashankh Group, AJUPY AI, Mahashankh Design, Mahashankh Fashion, AI solutions, design services, fashion events, internship programs, India" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'site/style.css' %}" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-brand">
+      <div class="nav-logo">
+        <span class="logo-ring"></span>
+        <span class="logo-text">MAHASHANKH</span>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero"       class="nav-link active" data-section="hero">Home</a></li>
+      <li><a href="#about"      class="nav-link" data-section="about">About</a></li>
+      <li><a href="#units"      class="nav-link" data-section="units">Business Units</a></li>
+      <li><a href="#industries" class="nav-link" data-section="industries">Services</a></li>
+      <li><a href="#vision"     class="nav-link" data-section="vision">Vision</a></li>
+      <li><a href="#contact"    class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta" id="nav-cta-btn">Get Started</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Three.js Canvas -->
+  <canvas id="webgl-canvas"></canvas>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- ══════════════════════════════════════
+         HERO SECTION
+    ══════════════════════════════════════ -->
+    <section id="hero" class="section hero-section">
+      <div class="hero-content">
+        <div class="hero-badge reveal-up">
+          <span class="badge-dot"></span>
+          <span>Innovation-Driven Organization · India</span>
+        </div>
+        <h1 class="hero-title reveal-up">
+          <span class="title-line">MAHASHANKH</span>
+          <span class="title-line gradient-text">GROUP</span>
+        </h1>
+        <p class="hero-tagline reveal-up">Four Specialized Business Units. One Vision for Innovation.</p>
+        <p class="hero-desc reveal-up">
+          Empowering businesses, startups, students, designers, creators, and aspiring
+          professionals with world-class Design, Technology, AI, and Talent Development solutions across India.
+        </p>
+        <div class="hero-actions reveal-up">
+          <a href="#units" class="btn-primary" id="hero-explore-btn">
+            <span>Explore Our Units</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#about" class="btn-ghost" id="hero-learn-btn">
+            <span>Learn More</span>
+          </a>
+        </div>
+        <div class="hero-stats reveal-up">
+          <div class="stat">
+            <span class="stat-num" data-count="7">0</span><span class="stat-unit">+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-count="2000">0</span><span class="stat-unit">+</span>
+            <span class="stat-label">Students Trained</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-count="1000">0</span><span class="stat-unit">+</span>
+            <span class="stat-label">Model Profiles</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-count="4">0</span>
+            <span class="stat-label">Business Units</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         ABOUT SECTION
+    ══════════════════════════════════════ -->
+    <section id="about" class="section about-section">
+      <div class="section-container">
+        <div class="about-grid">
+          <div class="about-left">
+            <div class="section-tag reveal-left">About Us</div>
+            <h2 class="section-title reveal-left">
+              One Group. <span class="gradient-text">Four Powers.</span> Endless Possibilities.
+            </h2>
+            <p class="section-desc reveal-left">
+              MAHASHANKH GROUP is an innovation-driven organization delivering creative, technology,
+              artificial intelligence, and talent development solutions across multiple industries.
+              Through its four specialized business units, the Group empowers businesses, startups,
+              students, designers, creators, and aspiring professionals with world-class products,
+              services, and career opportunities.
+            </p>
+            <div class="about-features reveal-left">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>End-to-End Solutions</h4>
+                  <p>Design, Technology, AI & Fashion under one roof</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>AI-Driven Innovation</h4>
+                  <p>Intelligent systems powering every division</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Nationwide Presence</h4>
+                  <p>Serving clients, businesses & talent across India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-right reveal-right">
+            <div class="about-card-grid">
+              <div class="about-card card-glow" id="about-card-1">
+                <div class="card-number">01</div>
+                <h3>Mahashankh Design</h3>
+                <p>Creative design solutions for every industry</p>
+                <div class="card-line"></div>
+              </div>
+              <div class="about-card card-glow" id="about-card-2">
+                <div class="card-number">02</div>
+                <h3>Design &amp; Technology</h3>
+                <p>AI-powered digital product development</p>
+                <div class="card-line"></div>
+              </div>
+              <div class="about-card card-glow" id="about-card-3">
+                <div class="card-number">03</div>
+                <h3>Mahashankh Fashion</h3>
+                <p>Fashion events &amp; talent development</p>
+                <div class="card-line"></div>
+              </div>
+              <div class="about-card card-glow" id="about-card-4">
+                <div class="card-number">04</div>
+                <h3>AJUPY AI</h3>
+                <p>Enterprise artificial intelligence solutions</p>
+                <div class="card-line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- At a Glance stats bar -->
+        <div class="glance-bar reveal-up">
+          <div class="glance-item">
+            <span class="glance-val">7+</span>
+            <span class="glance-label">Years of Industry Experience</span>
+          </div>
+          <div class="glance-sep"></div>
+          <div class="glance-item">
+            <span class="glance-val">4</span>
+            <span class="glance-label">Specialized Business Units</span>
+          </div>
+          <div class="glance-sep"></div>
+          <div class="glance-item">
+            <span class="glance-val">2,000+</span>
+            <span class="glance-label">Students Trained via Internships</span>
+          </div>
+          <div class="glance-sep"></div>
+          <div class="glance-item">
+            <span class="glance-val">1,000+</span>
+            <span class="glance-label">Model Profiles Developed</span>
+          </div>
+          <div class="glance-sep"></div>
+          <div class="glance-item">
+            <span class="glance-val">₹5L+</span>
+            <span class="glance-label">AI Subscription Sales</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         BUSINESS UNITS SECTION
+    ══════════════════════════════════════ -->
+    <section id="units" class="section units-section">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-tag reveal-up">Our Business Units</div>
+          <h2 class="section-title reveal-up">Four Divisions. <span class="gradient-text">Infinite Impact.</span></h2>
+          <p class="section-subtitle reveal-up">Each unit is a powerhouse in its domain — together they form a complete innovation ecosystem.</p>
+        </div>
+
+        <!-- Unit 1 — Mahashankh Design -->
+        <div class="unit-card reveal-up" id="unit-design">
+          <div class="unit-header">
+            <div class="unit-num-badge" style="--unit-color:#6c63ff">01</div>
+            <div class="unit-title-block">
+              <span class="unit-tag" style="--unit-color:#6c63ff">Creative Design</span>
+              <h3 class="unit-name">Mahashankh <span class="gradient-text">Design</span></h3>
+              <p class="unit-sub">Creative Design Solutions for Every Industry</p>
+            </div>
+            <div class="unit-icon" style="--unit-color:#6c63ff">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+              </svg>
+            </div>
+          </div>
+          <p class="unit-desc">
+            The creative design division of MAHASHANKH GROUP, providing professional design services for businesses,
+            manufacturers, fashion brands, home décor companies, and creative professionals. With over <strong>7 years of experience</strong>,
+            we specialize in creating high-quality ready-made and custom design solutions powered by creativity and artificial intelligence.
+          </p>
+          <div class="unit-body">
+            <div class="unit-services">
+              <h4 class="unit-services-title">Our Services</h4>
+              <div class="services-chip-grid">
+                <span class="chip">Ready-Made Design Collections</span>
+                <span class="chip">Custom Design Development</span>
+                <span class="chip">AI-Assisted Design</span>
+                <span class="chip">Surface Pattern Design</span>
+                <span class="chip">Saree Design</span>
+                <span class="chip">Garment &amp; Textile Design</span>
+                <span class="chip">Fashion Print Design</span>
+                <span class="chip">Wallpaper Design</span>
+                <span class="chip">Wall Covering Collections</span>
+                <span class="chip">Tile &amp; Ceramic Design</span>
+                <span class="chip">Home Furnishing Design</span>
+                <span class="chip">Cushion &amp; Bedding Designs</span>
+                <span class="chip">Packaging Design</span>
+                <span class="chip">Branding &amp; Graphic Design</span>
+                <span class="chip">Logo &amp; Identity Design</span>
+                <span class="chip">Print &amp; Digital Artwork</span>
+                <span class="chip">Product Visualization</span>
+                <span class="chip">Trend Forecasting</span>
+              </div>
+            </div>
+            <div class="unit-why">
+              <h4 class="unit-services-title">Why Choose Us?</h4>
+              <ul class="unit-why-list">
+                <li><span class="why-dot" style="--unit-color:#6c63ff"></span>7+ Years of Professional Experience</li>
+                <li><span class="why-dot" style="--unit-color:#6c63ff"></span>Custom &amp; Ready-to-Use Design Library</li>
+                <li><span class="why-dot" style="--unit-color:#6c63ff"></span>AI-Powered Creative Workflow</li>
+                <li><span class="why-dot" style="--unit-color:#6c63ff"></span>Industry-Specific Design Solutions</li>
+                <li><span class="why-dot" style="--unit-color:#6c63ff"></span>High-Resolution Production Files</li>
+                <li><span class="why-dot" style="--unit-color:#6c63ff"></span>Fast Delivery &amp; Customization</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unit 2 — Design & Technology -->
+        <div class="unit-card reveal-up" id="unit-tech">
+          <div class="unit-header">
+            <div class="unit-num-badge" style="--unit-color:#00d4ff">02</div>
+            <div class="unit-title-block">
+              <span class="unit-tag" style="--unit-color:#00d4ff">Technology &amp; AI</span>
+              <h3 class="unit-name">Mahashankh Design <span style="background:linear-gradient(135deg,#00d4ff,#6c63ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">&amp; Technology</span></h3>
+              <p class="unit-sub">Technology, AI &amp; Digital Product Development</p>
+            </div>
+            <div class="unit-icon" style="--unit-color:#00d4ff">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+          </div>
+          <p class="unit-desc">
+            The technology and software development division of MAHASHANKH GROUP. We build modern digital products,
+            AI-powered applications, websites, enterprise software, and scalable technology solutions for startups,
+            businesses, and organizations. We have successfully trained <strong>2,000+ students</strong> through industry-oriented internship programs.
+          </p>
+          <div class="unit-body">
+            <div class="unit-services">
+              <h4 class="unit-services-title">Technology Services</h4>
+              <div class="services-chip-grid">
+                <span class="chip chip-teal">Website Development</span>
+                <span class="chip chip-teal">Web Application Development</span>
+                <span class="chip chip-teal">Mobile App Development</span>
+                <span class="chip chip-teal">Custom Software Development</span>
+                <span class="chip chip-teal">AI Application Development</span>
+                <span class="chip chip-teal">SaaS Product Development</span>
+                <span class="chip chip-teal">Enterprise Software</span>
+                <span class="chip chip-teal">ERP &amp; CRM Solutions</span>
+                <span class="chip chip-teal">E-Commerce Development</span>
+                <span class="chip chip-teal">WordPress Development</span>
+                <span class="chip chip-teal">UI/UX Design</span>
+                <span class="chip chip-teal">API Development</span>
+                <span class="chip chip-teal">Cloud Solutions</span>
+                <span class="chip chip-teal">Automation Solutions</span>
+                <span class="chip chip-teal">Digital Transformation</span>
+              </div>
+            </div>
+            <div class="unit-why">
+              <h4 class="unit-services-title">Internship Domains</h4>
+              <ul class="unit-why-list">
+                <li><span class="why-dot" style="--unit-color:#00d4ff"></span>Artificial Intelligence</li>
+                <li><span class="why-dot" style="--unit-color:#00d4ff"></span>Full Stack Development</li>
+                <li><span class="why-dot" style="--unit-color:#00d4ff"></span>Web Development</li>
+                <li><span class="why-dot" style="--unit-color:#00d4ff"></span>Graphic Design &amp; UI/UX</li>
+                <li><span class="why-dot" style="--unit-color:#00d4ff"></span>Digital Marketing</li>
+                <li><span class="why-dot" style="--unit-color:#00d4ff"></span>Fashion Designing</li>
+                <li><span class="why-dot" style="--unit-color:#00d4ff"></span>MBA &amp; Business Management</li>
+                <li><span class="why-dot" style="--unit-color:#00d4ff"></span>Startup &amp; Entrepreneurship</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unit 3 — Mahashankh Fashion -->
+        <div class="unit-card reveal-up" id="unit-fashion">
+          <div class="unit-header">
+            <div class="unit-num-badge" style="--unit-color:#ff6b9d">03</div>
+            <div class="unit-title-block">
+              <span class="unit-tag" style="--unit-color:#ff6b9d">Fashion &amp; Talent</span>
+              <h3 class="unit-name">Mahashankh <span style="background:linear-gradient(135deg,#ff6b9d,#ffd166);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Fashion</span></h3>
+              <p class="unit-sub">Fashion Events, Beauty Pageants &amp; Talent Development</p>
+            </div>
+            <div class="unit-icon" style="--unit-color:#ff6b9d">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+          </div>
+          <p class="unit-desc">
+            The fashion and talent management division of MAHASHANKH GROUP, dedicated to discovering, grooming,
+            and promoting aspiring models, designers, influencers, and creative professionals across India.
+            With <strong>1,000+ model profiles</strong> developed and participants from across the nation.
+          </p>
+          <div class="unit-body">
+            <div class="unit-services">
+              <h4 class="unit-services-title">Core Services</h4>
+              <div class="services-chip-grid">
+                <span class="chip chip-pink">Fashion Shows</span>
+                <span class="chip chip-pink">Beauty Pageants</span>
+                <span class="chip chip-pink">Miss &amp; Mr Competitions</span>
+                <span class="chip chip-pink">Talent Auditions</span>
+                <span class="chip chip-pink">Model Registration</span>
+                <span class="chip chip-pink">Model Profile Building</span>
+                <span class="chip chip-pink">Portfolio Development</span>
+                <span class="chip chip-pink">Grooming &amp; Personality Dev.</span>
+                <span class="chip chip-pink">Ramp Walk Training</span>
+                <span class="chip chip-pink">Fashion Photography</span>
+                <span class="chip chip-pink">Designer Showcases</span>
+                <span class="chip chip-pink">Brand Collaborations</span>
+                <span class="chip chip-pink">Casting Opportunities</span>
+                <span class="chip chip-pink">Commercial &amp; Print Modeling</span>
+                <span class="chip chip-pink">OTT &amp; Digital Talent</span>
+                <span class="chip chip-pink">Entertainment Opportunities</span>
+              </div>
+            </div>
+            <div class="unit-why">
+              <h4 class="unit-services-title">Achievements</h4>
+              <ul class="unit-why-list">
+                <li><span class="why-dot" style="--unit-color:#ff6b9d"></span>1,000+ Model Profiles Developed</li>
+                <li><span class="why-dot" style="--unit-color:#ff6b9d"></span>Participants from Across India</li>
+                <li><span class="why-dot" style="--unit-color:#ff6b9d"></span>Fashion, Advertising &amp; Media Careers</li>
+                <li><span class="why-dot" style="--unit-color:#ff6b9d"></span>Entertainment Industry Opportunities</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unit 4 — AJUPY AI -->
+        <div class="unit-card reveal-up" id="unit-ai">
+          <div class="unit-header">
+            <div class="unit-num-badge" style="--unit-color:#ffd166">04</div>
+            <div class="unit-title-block">
+              <span class="unit-tag" style="--unit-color:#ffd166">Artificial Intelligence</span>
+              <h3 class="unit-name"><span style="background:linear-gradient(135deg,#ffd166,#ff6b9d);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">AJUPY AI</span></h3>
+              <p class="unit-sub">Enterprise Artificial Intelligence Solutions</p>
+            </div>
+            <div class="unit-icon" style="--unit-color:#ffd166">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+          </div>
+          <p class="unit-desc">
+            The artificial intelligence division of MAHASHANKH GROUP, helping businesses accelerate growth through
+            enterprise AI, intelligent automation, and next-generation AI applications. Delivering scalable AI solutions
+            across multiple industries with <strong>₹5,00,000+ in subscription sales</strong>.
+          </p>
+          <div class="unit-body">
+            <div class="unit-services">
+              <h4 class="unit-services-title">AI Solutions</h4>
+              <div class="services-chip-grid">
+                <span class="chip chip-gold">Enterprise AI Solutions</span>
+                <span class="chip chip-gold">Agentic AI Systems</span>
+                <span class="chip chip-gold">Generative AI Applications</span>
+                <span class="chip chip-gold">AI Chatbots</span>
+                <span class="chip chip-gold">AI Voice Assistants</span>
+                <span class="chip chip-gold">AI Workflow Automation</span>
+                <span class="chip chip-gold">AI Knowledge Management</span>
+                <span class="chip chip-gold">AI Document Processing</span>
+                <span class="chip chip-gold">AI Business Automation</span>
+                <span class="chip chip-gold">AI Customer Support</span>
+                <span class="chip chip-gold">AI Search &amp; Recommendation</span>
+                <span class="chip chip-gold">Machine Learning Solutions</span>
+                <span class="chip chip-gold">AI APIs &amp; Integrations</span>
+                <span class="chip chip-gold">AI SaaS Products</span>
+                <span class="chip chip-gold">AI Subscription Services</span>
+              </div>
+            </div>
+            <div class="unit-why">
+              <h4 class="unit-services-title">Business Highlights</h4>
+              <ul class="unit-why-list">
+                <li><span class="why-dot" style="--unit-color:#ffd166"></span>₹5,00,000+ Subscription Sales</li>
+                <li><span class="why-dot" style="--unit-color:#ffd166"></span>AI Products for Businesses &amp; Enterprises</li>
+                <li><span class="why-dot" style="--unit-color:#ffd166"></span>Scalable AI Across Multiple Industries</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         INDUSTRIES / WHY US SECTION
+    ══════════════════════════════════════ -->
+    <section id="industries" class="section services-section">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-tag reveal-up">Why MAHASHANKH GROUP?</div>
+          <h2 class="section-title reveal-up">A Complete <span class="gradient-text">Ecosystem</span> for Growth</h2>
+          <p class="section-subtitle reveal-up">Industry-focused products and services with a commitment to quality, innovation, and long-term growth</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal-up" id="service-1">
+            <div class="service-icon-wrap">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                  <line x1="12" y1="22.08" x2="12" y2="12"/>
+                </svg>
+              </div>
+            </div>
+            <h3>Four Specialized Units</h3>
+            <p>Design, Technology, Fashion &amp; AI — a complete ecosystem under one roof delivering synergistic solutions.</p>
+            <div class="service-tags">
+              <span>Design</span><span>Tech</span><span>AI</span><span>Fashion</span>
+            </div>
+            <div class="service-arrow">→</div>
+          </div>
+          <div class="service-card reveal-up" id="service-2">
+            <div class="service-icon-wrap">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="2" y1="12" x2="22" y2="12"/>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+              </div>
+            </div>
+            <h3>Nationwide Presence</h3>
+            <p>Serving clients, businesses, and talent across India with end-to-end solutions tailored to local industries.</p>
+            <div class="service-tags">
+              <span>India</span><span>Pan-India</span><span>Remote</span>
+            </div>
+            <div class="service-arrow">→</div>
+          </div>
+          <div class="service-card reveal-up" id="service-3">
+            <div class="service-icon-wrap">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                </svg>
+              </div>
+            </div>
+            <h3>AI-Driven Innovation</h3>
+            <p>Artificial intelligence powers every division — from design workflows to enterprise automation and beyond.</p>
+            <div class="service-tags">
+              <span>Generative AI</span><span>Agentic AI</span><span>ML</span>
+            </div>
+            <div class="service-arrow">→</div>
+          </div>
+          <div class="service-card reveal-up" id="service-4">
+            <div class="service-icon-wrap">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+            </div>
+            <h3>2,000+ Students Trained</h3>
+            <p>Industry-focused internship programs providing live projects, professional mentorship, and career growth.</p>
+            <div class="service-tags">
+              <span>Internships</span><span>Mentorship</span><span>Careers</span>
+            </div>
+            <div class="service-arrow">→</div>
+          </div>
+          <div class="service-card reveal-up" id="service-5">
+            <div class="service-icon-wrap">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg>
+              </div>
+            </div>
+            <h3>1,000+ Model Profiles</h3>
+            <p>Discovering and grooming aspiring models, designers, and creative professionals for career opportunities.</p>
+            <div class="service-tags">
+              <span>Fashion</span><span>Modeling</span><span>Talent</span>
+            </div>
+            <div class="service-arrow">→</div>
+          </div>
+          <div class="service-card reveal-up" id="service-6">
+            <div class="service-icon-wrap">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <line x1="12" y1="1" x2="12" y2="23"/>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+            </div>
+            <h3>₹5L+ AI Subscriptions</h3>
+            <p>Proven AI products driving real business value for enterprises with scalable, results-oriented AI solutions.</p>
+            <div class="service-tags">
+              <span>Revenue</span><span>SaaS</span><span>Enterprise</span>
+            </div>
+            <div class="service-arrow">→</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         VISION & MISSION SECTION
+    ══════════════════════════════════════ -->
+    <section id="vision" class="section vision-section">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-tag reveal-up">Our Purpose</div>
+          <h2 class="section-title reveal-up">Vision &amp; <span class="gradient-text">Mission</span></h2>
+        </div>
+        <div class="vision-grid">
+          <div class="vision-card reveal-left" id="vision-card">
+            <div class="vision-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="6"/>
+                <circle cx="12" cy="12" r="2"/>
+              </svg>
+            </div>
+            <h3>Our Vision</h3>
+            <p>
+              To build one of India's leading innovation ecosystems by empowering businesses, creators,
+              students, and professionals through world-class design, advanced technology, artificial
+              intelligence, and talent development.
+            </p>
+            <div class="vision-line"></div>
+          </div>
+          <div class="vision-card reveal-right" id="mission-card">
+            <div class="vision-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <h3>Our Mission</h3>
+            <p>
+              To deliver innovative products, intelligent software, creative design solutions, AI-powered services,
+              and career-building opportunities that help individuals and organizations succeed in a rapidly evolving digital world.
+            </p>
+            <div class="vision-line"></div>
+          </div>
+        </div>
+
+        <!-- Tagline Banner -->
+        <div class="tagline-banner reveal-up">
+          <p class="tagline-text">
+            <span class="gradient-text">MAHASHANKH GROUP</span> — Designing the Future. Developing Technology. Empowering Talent. Transforming Businesses.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         CONTACT SECTION
+    ══════════════════════════════════════ -->
+    <section id="contact" class="section contact-section">
+      <div class="section-container">
+        <div class="contact-inner">
+          <div class="contact-left">
+            <div class="section-tag reveal-left">Let's Collaborate</div>
+            <h2 class="section-title reveal-left">Ready to build something <span class="gradient-text">extraordinary?</span></h2>
+            <p class="section-desc reveal-left">
+              Whether you're a business, startup, student, or creative professional — we'd love to connect.
+              Reach out and we'll respond within 24 hours.
+            </p>
+            <div class="contact-details reveal-left">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <span>hello@mahashankh.com</span>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <span>India — Serving Nationwide &amp; Remotely</span>
+              </div>
+            </div>
+            <div class="social-links reveal-left">
+              <a href="#" class="social-link" id="social-twitter" aria-label="Twitter / X">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.855L1.254 2.25H8.08l4.261 5.632L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
+              </a>
+              <a href="#" class="social-link" id="social-linkedin" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="#" class="social-link" id="social-instagram" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+              <a href="#" class="social-link" id="social-youtube" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="contact-right reveal-right">
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="project">Business Unit / Service</label>
+                <select id="project" name="project">
+                  <option value="">Select a division...</option>
+                  <option value="design">Mahashankh Design</option>
+                  <option value="tech">Mahashankh Design &amp; Technology</option>
+                  <option value="fashion">Mahashankh Fashion</option>
+                  <option value="ai">AJUPY AI</option>
+                  <option value="internship">Internship Program</option>
+                  <option value="other">Other / General Enquiry</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Tell us about your project</label>
+                <textarea id="message" name="message" placeholder="Describe your requirements or vision..." rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn-primary btn-full" id="submit-form-btn">
+                <span>Send Message</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <span class="logo-ring"></span>
+          <span class="logo-text">MAHASHANKH</span>
+        </div>
+        <p>Designing the Future. Developing Technology.<br>Empowering Talent. Transforming Businesses.</p>
+        <div class="footer-units">
+          <span>Mahashankh Design</span>
+          <span class="footer-dot">·</span>
+          <span>Design &amp; Technology</span>
+          <span class="footer-dot">·</span>
+          <span>Mahashankh Fashion</span>
+          <span class="footer-dot">·</span>
+          <span>AJUPY AI</span>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <span>© 2026 MAHASHANKH GROUP. All rights reserved.</span>
+        
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════
+       FLOATING SUPPORT WIDGETS
+  ══════════════════════════════════════ -->
+
+  <!-- WhatsApp Floating Button -->
+  <a
+    id="whatsapp-fab"
+    class="whatsapp-fab"
+    href="https://wa.me/916203495282?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20MAHASHANKH%20GROUP%20services."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat on WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="whatsapp-fab-label">WhatsApp Us</span>
+    <span class="whatsapp-fab-ping"></span>
+  </a>
+
+  <!-- AI Chat Widget -->
+  <div id="ai-chat-widget" class="ai-chat-widget" role="complementary" aria-label="AI Chat Assistant">
+
+    <!-- Chat Toggle Button -->
+    <button id="ai-chat-toggle" class="ai-chat-toggle" aria-label="Open AI Chat" aria-expanded="false">
+      <div class="chat-toggle-icon chat-open-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          <circle cx="8.5" cy="10.5" r="1" fill="currentColor" stroke="none"/>
+          <circle cx="12" cy="10.5" r="1" fill="currentColor" stroke="none"/>
+          <circle cx="15.5" cy="10.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+      </div>
+      <div class="chat-toggle-icon chat-close-icon" style="display:none;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </div>
+      <span class="chat-toggle-badge" id="chat-unread-badge">1</span>
+    </button>
+
+    <!-- Chat Panel -->
+    <div id="ai-chat-panel" class="ai-chat-panel" aria-hidden="true">
+      <!-- Header -->
+      <div class="ai-chat-header">
+        <div class="ai-chat-header-left">
+          <div class="ai-avatar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <div class="ai-chat-header-info">
+            <span class="ai-chat-name">MAHASHANKH AI</span>
+            <span class="ai-chat-status">
+              <span class="status-dot"></span>
+              Online · Instant reply
+            </span>
+          </div>
+        </div>
+        <div class="ai-chat-header-actions">
+          <a
+            href="https://wa.me/916203495282?text=Hello%2C%20I%20need%20support%20from%20MAHASHANKH%20GROUP."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="ai-header-wa-btn"
+            id="ai-header-wa-btn"
+            title="Continue on WhatsApp"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            WhatsApp
+          </a>
+          <button class="ai-chat-close-btn" id="ai-chat-clear-btn" aria-label="Clear conversation" title="Clear conversation">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 6h18M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2m3 0v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V6"/>
+            </svg>
+          </button>
+          <button class="ai-chat-close-btn" id="ai-chat-close-btn" aria-label="Close chat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Actions Bar -->
+      <div class="ai-quick-bar" id="ai-quick-bar">
+        <span class="quick-bar-label">Quick Inquiries:</span>
+        <div class="quick-actions">
+          <button class="quick-chip" data-msg="Tell me about Mahashankh Design services">Design</button>
+          <button class="quick-chip" data-msg="Tell me about your Technology & AI services">Tech & AI</button>
+          <button class="quick-chip" data-msg="Tell me about Mahashankh Fashion & talent programs">Fashion</button>
+          <button class="quick-chip" data-msg="How can I apply for an internship?">Internships</button>
+          <button class="quick-chip" data-msg="What is AJUPY AI and how can it help my business?">AJUPY AI</button>
+          <button class="quick-chip" data-msg="How do I contact MAHASHANKH GROUP?">Contact</button>
+        </div>
+      </div>
+
+      <!-- Messages Area -->
+      <div class="ai-messages" id="ai-messages" role="log" aria-live="polite"></div>
+
+      <!-- Typing Indicator -->
+      <div class="ai-typing" id="ai-typing" aria-hidden="true">
+        <div class="ai-avatar ai-avatar-sm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <div class="typing-dots">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <!-- Input Area -->
+      <div class="ai-input-area">
+        <div class="ai-input-wrap">
+          <textarea
+            id="ai-chat-input"
+            class="ai-chat-input"
+            placeholder="Ask about our services, internships, AI…"
+            rows="1"
+            aria-label="Type your message"
+          ></textarea>
+          <button id="ai-send-btn" class="ai-send-btn" aria-label="Send message">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"/>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+          </button>
+        </div>
+        <div class="ai-input-footer">
+          <span>Powered by <strong>MAHASHANKH AI</strong></span>
+          <a
+            href="https://wa.me/916203495282"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="input-wa-link"
+            id="input-wa-link"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Three.js from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+ <script type="module" src="{% static 'site/app.js' %}"></script>
+ <script src="{% static 'site/chat.js' %}" defer></script>
+
+</body>
+</html>

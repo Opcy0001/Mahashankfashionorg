@@ -1,0 +1,72 @@
+.maha-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+#maha-delete,
+#maha-close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0.9;
+  line-height: 1;
+  padding: 4px;
+}
+#maha-delete:hover,
+#maha-close:hover { opacity: 1; }
+#maha-delete svg { width: 18px; height: 18px; fill: #fff; display: block; }
+
+#maha-delete-confirm {
+  position: absolute;
+  top: 60px;
+  right: 16px;
+  background: #fff;
+  color: var(--maha-ink);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(30, 27, 51, 0.2);
+  padding: 14px;
+  width: 230px;
+  z-index: 10000;
+  display: none;
+}
+#maha-delete-confirm.maha-show { display: block; }
+#maha-delete-confirm p {
+  font-size: 13px;
+  margin: 0 0 12px;
+  line-height: 1.4;
+}
+#maha-delete-confirm .maha-confirm-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+#maha-delete-confirm button {
+  font-size: 12.5px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+#maha-cancel-delete {
+  background: var(--maha-bg);
+  color: var(--maha-ink);
+}
+#maha-confirm-delete {
+  background: #E24B4A;
+  color: #fff;
+}
+
+.maha-bubble a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+.maha-bubble a:hover {
+  color: #004499;
+  text-decoration: none;
+}
